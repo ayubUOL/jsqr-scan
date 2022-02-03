@@ -1,5 +1,7 @@
 {
   "name": "jsqr-demoApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

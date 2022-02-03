@@ -1,27 +1,57 @@
-#container {
-  text-align: center;
+video {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
 
+canvas {
+  border: 5px solid #ff0000;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scrollOn-data {
+  overflow-y: auto;
+  height: calc(98vh - 240px) !important;
+
+  p{
+    margin: 6px 6px 0px 10px;
+  }
+}
+
+.scanbox {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  top: 0;
+  height: 250px;
+  width: 100%;
+  background: rgba(85, 85, 85, 0.6);
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    25% 100%,
+    25% 25%,
+    75% 25%,
+    75% 75%,
+    25% 75%,
+    25% 100%,
+    100% 100%,
+    100% 0%
+  );
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    25% 100%,
+    25% 25%,
+    75% 25%,
+    75% 75%,
+    25% 75%,
+    25% 100%,
+    100% 100%,
+    100% 0%
+  );
 }
